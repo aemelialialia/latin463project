@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/menu.unity
+    guid: 2ae4b26eb56349b4aa9b282038722da0
+  - enabled: 0
+    path: Assets/Scenes/Test Scenes/maintest.unity
+    guid: e0184dccb5714dc4895ba5ae74a60bd1
+  - enabled: 1
+    path: Assets/Scenes/tutorial.unity
+    guid: dae6e6b68d1e1c0448c717d1302f476b
+  - enabled: 1
+    path: Assets/Scenes/apollo.unity
+    guid: 13c896ee949705c418fc5ac4ead18473
+  - enabled: 0
+    path: Assets/__DELETED_GUID_Trash/6221a6988ad805b4b8053c648780a2d1
+    guid: 6221a6988ad805b4b8053c648780a2d1
+  - enabled: 1
+    path: Assets/Scenes/ApolloTinder.unity
+    guid: bf79635a625ecf24a8b63a7522939cd7
+  - enabled: 1
+    path: Assets/Scenes/fotus.unity
+    guid: ca1f5e3b96351c8478b43aa35165ea6c
+  m_configObjects: {}

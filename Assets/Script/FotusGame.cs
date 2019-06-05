@@ -2,14 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 public class FotusGame : MonoBehaviour
 {
 
-    [SerializeField] Text conversation;
+    [SerializeField] TextMeshProUGUI conversation;
+    [SerializeField] TextMeshProUGUI name;
     [SerializeField] Button continues;
-    [SerializeField] Button onlyOption;
 
     [SerializeField] State startingState;
+
+    Dialogue dialogue;
 
     State state;
 
@@ -18,6 +21,7 @@ public class FotusGame : MonoBehaviour
     {
         state = startingState;
         conversation.text = state.GetStoryText();
+        name.text = dialogue.name;
         continues.gameObject.SetActive(false);
     }
 

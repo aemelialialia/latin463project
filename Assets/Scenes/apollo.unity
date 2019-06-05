@@ -185,6 +185,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 425618218}
+  - component: {fileID: 425618219}
   - component: {fileID: 425618217}
   m_Layer: 0
   m_Name: GameObject
@@ -193,19 +194,32 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!65 &425618217
-BoxCollider:
+--- !u!61 &425618217
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 425618216}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!4 &425618218
 Transform:
   m_ObjectHideFlags: 0
@@ -214,12 +228,24 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 425618216}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.39, y: -0.50072134, z: 162.88525}
+  m_LocalPosition: {x: 8.39, y: 0.04, z: 162.88525}
   m_LocalScale: {x: 1, y: 3.5125, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &425618219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425618216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ea37e7ee9b0e8243a6f0a2935ae53a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &501591897 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3442759910765566143, guid: fd7edd568b5be7e43bd9c26b769ae12c,
@@ -441,6 +467,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd7edd568b5be7e43bd9c26b769ae12c, type: 3}
+--- !u!1 &885826134 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3442759910064976248, guid: fd7edd568b5be7e43bd9c26b769ae12c,
+    type: 3}
+  m_PrefabInstance: {fileID: 885826133}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &885826137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 885826134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ea37e7ee9b0e8243a6f0a2935ae53a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1181804846
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -468,6 +512,11 @@ PrefabInstance:
       propertyPath: anim
       value: 
       objectReference: {fileID: 2046525068}
+    - target: {fileID: 4735723751436360457, guid: d61c8fc30b10f594ba550589b3be3db6,
+        type: 3}
+      propertyPath: tinder
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4735723751436360456, guid: d61c8fc30b10f594ba550589b3be3db6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -675,6 +724,57 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7840982289826347480, guid: 3d663a40a616fce4d97c37283a652cb0,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 15.688796
+      objectReference: {fileID: 0}
+    - target: {fileID: 7840982289826347480, guid: 3d663a40a616fce4d97c37283a652cb0,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 14.959682
+      objectReference: {fileID: 0}
+    - target: {fileID: 7840982289826347480, guid: 3d663a40a616fce4d97c37283a652cb0,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 8.5778
+      objectReference: {fileID: 0}
+    - target: {fileID: 7840982289826347481, guid: 3d663a40a616fce4d97c37283a652cb0,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6982b4b124c50a349acd7c32b057627f,
+        type: 3}
+    - target: {fileID: 7840982289826347483, guid: 3d663a40a616fce4d97c37283a652cb0,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.000682177
+      objectReference: {fileID: 0}
+    - target: {fileID: 7840982289826347483, guid: 3d663a40a616fce4d97c37283a652cb0,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 7840982289826347483, guid: 3d663a40a616fce4d97c37283a652cb0,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 7840982289826347483, guid: 3d663a40a616fce4d97c37283a652cb0,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.08729738
+      objectReference: {fileID: 0}
+    - target: {fileID: 7840982289826347483, guid: 3d663a40a616fce4d97c37283a652cb0,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.0042922795
+      objectReference: {fileID: 0}
+    - target: {fileID: 7840982289826347483, guid: 3d663a40a616fce4d97c37283a652cb0,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.17015183
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d663a40a616fce4d97c37283a652cb0, type: 3}
 --- !u!114 &1444255254 stripped
@@ -822,23 +922,118 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5835804626467959030, guid: baf07e713a4c90d4a96b6f62ce09ea7d,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 20.286242
+      objectReference: {fileID: 0}
+    - target: {fileID: 5835804626467959030, guid: baf07e713a4c90d4a96b6f62ce09ea7d,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 18.062548
+      objectReference: {fileID: 0}
+    - target: {fileID: 5835804626467959030, guid: baf07e713a4c90d4a96b6f62ce09ea7d,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 5.6872
+      objectReference: {fileID: 0}
+    - target: {fileID: 5835804626467959024, guid: baf07e713a4c90d4a96b6f62ce09ea7d,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5835804626467959024, guid: baf07e713a4c90d4a96b6f62ce09ea7d,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[1]
-      value: Yes.
+      value: I don't see many beautiful people like you walking around this part of
+        the town?
       objectReference: {fileID: 0}
     - target: {fileID: 5835804626467959024, guid: baf07e713a4c90d4a96b6f62ce09ea7d,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[2]
-      value: No.
+      value: I love you.
       objectReference: {fileID: 0}
     - target: {fileID: 5835804626467959024, guid: baf07e713a4c90d4a96b6f62ce09ea7d,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: Hello, my name is midas.
+      value: Oh hello there. I'm Apollo.
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 5835804626467959024, guid: baf07e713a4c90d4a96b6f62ce09ea7d,
+        type: 3}
+      propertyPath: dialogue.name
+      value: Apollo
+      objectReference: {fileID: 0}
+    - target: {fileID: 5835804626467959024, guid: baf07e713a4c90d4a96b6f62ce09ea7d,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[3]
+      value: Oh you heard me.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5835804626467959024, guid: baf07e713a4c90d4a96b6f62ce09ea7d,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[4]
+      value: Do you have that thing called Tinder? I will definitely swipe right on
+        you, you know what I mean.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5835804626467959024, guid: baf07e713a4c90d4a96b6f62ce09ea7d,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[5]
+      value: No, please don't go... Leaving a god is literally a crime.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5835804626467959024, guid: baf07e713a4c90d4a96b6f62ce09ea7d,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[6]
+      value: You can't escape me.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5835804626467959024, guid: baf07e713a4c90d4a96b6f62ce09ea7d,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[7]
+      value: No.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5835804626467959031, guid: baf07e713a4c90d4a96b6f62ce09ea7d,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5835804626467959031, guid: baf07e713a4c90d4a96b6f62ce09ea7d,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: -11
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5835804626467959025, guid: baf07e713a4c90d4a96b6f62ce09ea7d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: baf07e713a4c90d4a96b6f62ce09ea7d, type: 3}
+--- !u!1 &2013271986 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5835804626467959028, guid: baf07e713a4c90d4a96b6f62ce09ea7d,
+    type: 3}
+  m_PrefabInstance: {fileID: 2013271985}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &2013271987
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013271986}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.121863395, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.7562732, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &2020140013
 GameObject:
   m_ObjectHideFlags: 0

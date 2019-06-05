@@ -22,7 +22,7 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
-        Debug.Log("Starting conversation with" + dialogue.name);
+        //Debug.Log("Starting conversation with" + dialogue.name);
 
         anim.SetBool("isOpen", true);
 
@@ -40,7 +40,7 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextSentence()
     {
-        Debug.Log("Displaying another sentence.");
+        //Debug.Log("Displaying another sentence.");
 
         if (sentences.Count == 0)
         {
@@ -69,5 +69,10 @@ public class DialogueManager : MonoBehaviour
         Debug.Log("End of Conversation. Bye.");
 
         anim.SetBool("isOpen", false);
+    }
+
+    public Queue<string> GetSentences()
+    {
+        return sentences;
     }
 }

@@ -66,9 +66,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9424}
     - Class: 114
-      Script: {instanceID: 9852}
+      Script: {instanceID: 9854}
     - Class: 114
-      Script: {instanceID: 10614}
+      Script: {instanceID: 10620}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -98,11 +98,7 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 50
       Script: {instanceID: 0}
-    - Class: 60
-      Script: {instanceID: 0}
     - Class: 61
-      Script: {instanceID: 0}
-    - Class: 65
       Script: {instanceID: 0}
     - Class: 74
       Script: {instanceID: 0}
@@ -129,15 +125,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9406}
     - Class: 114
-      Script: {instanceID: 9796}
+      Script: {instanceID: 9612}
     - Class: 114
-      Script: {instanceID: 10112}
+      Script: {instanceID: 9798}
     - Class: 114
-      Script: {instanceID: 10274}
+      Script: {instanceID: 10118}
     - Class: 114
-      Script: {instanceID: 10322}
+      Script: {instanceID: 10280}
     - Class: 114
-      Script: {instanceID: 12248}
+      Script: {instanceID: 10328}
+    - Class: 114
+      Script: {instanceID: 10620}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -179,8 +177,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
-    - Class: 65
-      Script: {instanceID: 0}
     - Class: 74
       Script: {instanceID: 0}
     - Class: 81
@@ -206,15 +202,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9406}
     - Class: 114
-      Script: {instanceID: 9796}
+      Script: {instanceID: 9612}
     - Class: 114
-      Script: {instanceID: 10112}
+      Script: {instanceID: 9798}
     - Class: 114
-      Script: {instanceID: 10274}
+      Script: {instanceID: 10118}
     - Class: 114
-      Script: {instanceID: 10322}
+      Script: {instanceID: 10280}
     - Class: 114
-      Script: {instanceID: 12248}
+      Script: {instanceID: 10328}
+    - Class: 114
+      Script: {instanceID: 10620}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -273,19 +271,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9408}
     - Class: 114
-      Script: {instanceID: 9768}
+      Script: {instanceID: 9612}
     - Class: 114
-      Script: {instanceID: 10112}
+      Script: {instanceID: 9770}
     - Class: 114
-      Script: {instanceID: 10122}
+      Script: {instanceID: 10118}
     - Class: 114
-      Script: {instanceID: 10274}
+      Script: {instanceID: 10128}
     - Class: 114
-      Script: {instanceID: 10530}
+      Script: {instanceID: 10280}
     - Class: 114
-      Script: {instanceID: 10608}
+      Script: {instanceID: 10536}
     - Class: 114
       Script: {instanceID: 10614}
+    - Class: 114
+      Script: {instanceID: 10620}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -299,6 +299,12 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 156049354
+      Script: {instanceID: 0}
+    - Class: 483693784
+      Script: {instanceID: 0}
+    - Class: 1839735485
       Script: {instanceID: 0}
     Assets/Scenes/tutorial.unity:
     - Class: 1
@@ -344,17 +350,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9406}
     - Class: 114
-      Script: {instanceID: 9796}
+      Script: {instanceID: 9612}
     - Class: 114
-      Script: {instanceID: 10112}
+      Script: {instanceID: 9798}
     - Class: 114
-      Script: {instanceID: 10274}
+      Script: {instanceID: 10118}
     - Class: 114
-      Script: {instanceID: 10322}
+      Script: {instanceID: 10280}
     - Class: 114
-      Script: {instanceID: 10614}
+      Script: {instanceID: 10328}
     - Class: 114
-      Script: {instanceID: 12248}
+      Script: {instanceID: 10620}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -830,6 +836,12 @@ ScriptsOnlyBuild:
     className: SignalAsset
   - hash:
       serializedVersion: 2
+      Hash: 75b328e907c21aa6e1f39cd016b14864
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: UnityEngine
+    className: RuleTile
+  - hash:
+      serializedVersion: 2
       Hash: f08a111e17bb701f9c9ec57bb78d9920
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -960,6 +972,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SpriteAnimator
+  - hash:
+      serializedVersion: 2
+      Hash: 3887d4eaa1d0c0cc0820970674f79a7f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FotusGame
   - hash:
       serializedVersion: 2
       Hash: 4fd8bf02e3089425d3502e26c44ba31a
@@ -1254,12 +1272,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 75b328e907c21aa6e1f39cd016b14864
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: UnityEngine
-    className: RuleTile
   platform: 19
   scenePathNames:
   - Assets/Scenes/menu.unity
@@ -1267,4 +1279,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/apollo.unity
   - Assets/Scenes/ApolloTinder.unity
   - Assets/Scenes/fotus.unity
-  playerPath: C:/Users/Emily Z/Documents/Latin 463/Latin 463.exe
+  playerPath: C:/Users/Emily Z/Documents/Latin 463/finalbuild/Latin 463.exe

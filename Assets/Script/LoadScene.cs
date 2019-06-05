@@ -10,9 +10,9 @@ public class LoadScene : MonoBehaviour
         SceneManager.LoadScene("tutorial");
     }
 
-    public void OnApplicationQuit()
+    public void Quit()
     {
-        //quit
+        Application.Quit();
     }
 
     public void Menu()
@@ -30,11 +30,23 @@ public class LoadScene : MonoBehaviour
         SceneManager.LoadScene("fotus");
     }
 
+    public void StartDate()
+    {
+        SceneManager.LoadScene("ApolloTinder");
+    }
+
     public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.GetComponent<PlayerMovement>())
         {
-            SceneManager.LoadScene("apollo");
+            int currentScene = SceneManager.GetActiveScene().buildIndex;
+            if (currentScene < 5)
+            {
+                SceneManager.LoadScene(currentScene + 1);
+            } else
+            {
+                Application.Quit();
+            }
         }
     }
 }

@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/ApolloTinder.unity
+- path: Assets/Scenes/fotus.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
